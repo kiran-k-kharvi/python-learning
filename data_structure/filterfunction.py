@@ -5,10 +5,5 @@ items = [
     ("product4", 1),
 ]
 
-
-def sort_item(item):
-    return item[1]
-
-
-items.sort(key=sort_item)
-print(items)
+filtered = list(filter(lambda item: item[1] >= 10, items))
+print(filtered)
